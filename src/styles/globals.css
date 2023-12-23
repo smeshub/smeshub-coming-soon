@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* metropolis-latin-400 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-400-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-400-normal.woff)
+      format('woff');
+}
+
+/* metropolis-latin-500 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-500-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-500-normal.woff)
+      format('woff');
+}
+
+/* metropolis-latin-600 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-600-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-600-normal.woff)
+      format('woff');
+}
+
+/* metropolis-latin-700 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-700-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-700-normal.woff)
+      format('woff');
+}
+
+/* metropolis-latin-800 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-800-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-800-normal.woff)
+      format('woff');
+}
+
+/* metropolis-latin-900 */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-900-normal.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-900-normal.woff)
+      format('woff');
+}
+
+@layer base {
+  html {
+    font-family: 'Metropolis', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never;
+  }
+  body {
+    @apply flex h-screen flex-col overflow-auto;
+  }
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      -moz-print-color-adjust: exact;
+      -ms-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    @apply m-0 appearance-none;
+  }
+  input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+  input[type='date']::-moz-calendar-picker {
+    display: none !important;
+  }
+}
+
+.svg-fill-current path {
+  fill: currentColor;
+}
+
+.svg-stroke-current path {
+  stroke: currentColor;
+}
