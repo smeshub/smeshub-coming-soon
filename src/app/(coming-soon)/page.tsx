@@ -14,15 +14,7 @@ export default function Home() {
             className="object-contain object-left-top"
           />
         </div>
-        <div className="w-full flex flex-col items-end justify-between p-12 gap-12">
-          <Image
-            alt="smeshub"
-            src="/smeshub.png"
-            className="object-contain"
-            priority
-            width={220}
-            height={120}
-          />
+        <div className="w-full flex flex-col items-end justify-end p-12 gap-12">
           <Image
             alt="smeshub 2024"
             src="/smeshub-2024.png"
@@ -35,7 +27,7 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center w-full h-full py-24 px-12 gap-16 flex-col">
         <p className="text-center text-smeshub text-display-md lg:text-display-lg orphan">
-          Fostering a Culture for <b>Collaboration</b>
+          Fostering a Culture of <b>Collaboration</b>
         </p>
         <div className="w-full flex gap-8 flex-wrap items-center justify-center max-w-screen-xl">
           <Image
